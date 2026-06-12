@@ -3,79 +3,657 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A&A Construction Mauritius | A Grade Quality Service</title>
-  <meta name="description" content="A&A Construction provides A grade quality construction services in Mauritius including grey finish, full house finish, renovation and small house works." />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="hero">
-    <nav class="navbar">
-      <a class="brand" href="index.html">🏗️ A&A Construction</a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
-        <a class="nav-btn" href="contact.html">Contact</a>
-      </div>
-    </nav>
 
-    <section class="hero-content">
-      <p class="eyebrow">Construction Services Across Mauritius</p>
-      <h1>Providing You A Grade Quality Service</h1>
-      <p>From grey finish to full house finish, renovations and small incomplete house works, A&A Construction takes all construction jobs with care, reliability and quality workmanship.</p>
-      <div class="hero-buttons">
-        <a class="btn primary" href="services.html">View Services</a>
-        <a class="btn secondary" href="contact.html">Get Free Quote</a>
+  <title>Azhar & Nabiihah Wedding Invitation</title>
+
+  <meta name="description" content="Wedding invitation for Muhammad Azhar and Nabiihah. Nikah ceremony and dinner details." />
+
+  <!-- Bootstrap Online -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons Online -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts Online -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --maroon: #6f1d1b;
+      --gold: #b7791f;
+      --cream: #fffaf2;
+      --dark: #231816;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(183,121,31,.12), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(111,29,27,.12), transparent 35%),
+        var(--cream);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+
+    .page-border {
+      border: 3px solid var(--maroon);
+      margin: 14px;
+      min-height: calc(100vh - 28px);
+      position: relative;
+      background: rgba(255,255,255,.72);
+      overflow: hidden;
+    }
+
+    .page-border::before,
+    .page-border::after {
+      content: "❦";
+      position: absolute;
+      font-size: 90px;
+      color: rgba(111,29,27,.12);
+      z-index: 0;
+    }
+
+    .page-border::before {
+      top: 15px;
+      left: 25px;
+    }
+
+    .page-border::after {
+      bottom: 15px;
+      right: 25px;
+      transform: rotate(180deg);
+    }
+
+    .navbar {
+      background: rgba(255,250,242,.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(111,29,27,.12);
+    }
+
+    .navbar-brand {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: var(--maroon);
+    }
+
+    .nav-link {
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: var(--maroon);
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      padding: 100px 0 70px;
+    }
+
+    .bismillah {
+      font-family: "Playfair Display", serif;
+      color: var(--gold);
+      font-size: clamp(34px, 7vw, 76px);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .small-title {
+      letter-spacing: 2px;
+      color: var(--maroon);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .families {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(26px, 4vw, 42px);
+      color: var(--maroon);
+      font-weight: 700;
+    }
+
+    .names {
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(75px, 16vw, 170px);
+      color: var(--maroon);
+      line-height: .85;
+      text-shadow: 0 8px 35px rgba(111,29,27,.15);
+    }
+
+    .amp {
+      font-family: "Playfair Display", serif;
+      color: var(--gold);
+      font-size: 42px;
+      margin: 8px 0;
+    }
+
+    .gold-line {
+      width: 170px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 20px auto;
+    }
+
+    .glass-card {
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(183,121,31,.25);
+      box-shadow: 0 20px 60px rgba(35,24,22,.12);
+      border-radius: 28px;
+      padding: 32px;
+    }
+
+    .section {
+      padding: 85px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(34px, 5vw, 56px);
+      color: var(--maroon);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .event-card {
+      height: 100%;
+      border-radius: 26px;
+      padding: 32px;
+      background: white;
+      border: 1px solid rgba(111,29,27,.12);
+      box-shadow: 0 14px 40px rgba(35,24,22,.09);
+      transition: .3s;
+    }
+
+    .event-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 60px rgba(35,24,22,.14);
+    }
+
+    .icon-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(183,121,31,.13);
+      color: var(--gold);
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .date-big {
+      color: var(--maroon);
+      font-weight: 800;
+      font-size: 22px;
+    }
+
+    .btn-maroon {
+      background: var(--maroon);
+      color: white;
+      border-radius: 999px;
+      padding: 13px 28px;
+      border: none;
+      font-weight: 600;
+    }
+
+    .btn-maroon:hover {
+      background: #511211;
+      color: white;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: white;
+      border-radius: 999px;
+      padding: 13px 28px;
+      border: none;
+      font-weight: 600;
+    }
+
+    .btn-gold:hover {
+      background: #956114;
+      color: white;
+    }
+
+    .count-box {
+      background: var(--maroon);
+      color: white;
+      border-radius: 22px;
+      padding: 25px 12px;
+      box-shadow: 0 16px 35px rgba(111,29,27,.22);
+    }
+
+    .count-number {
+      font-size: clamp(30px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .count-label {
+      font-size: 13px;
+      letter-spacing: 1px;
+      opacity: .85;
+      text-transform: uppercase;
+    }
+
+    .video-box {
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 25px 70px rgba(35,24,22,.18);
+      border: 8px solid white;
+    }
+
+    .video-placeholder {
+      min-height: 340px;
+      background:
+        linear-gradient(rgba(111,29,27,.75), rgba(35,24,22,.75)),
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      place-items: center;
+      color: white;
+      text-align: center;
+      padding: 35px;
+    }
+
+    .play-btn {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background: white;
+      color: var(--maroon);
+      display: grid;
+      place-items: center;
+      font-size: 42px;
+      margin: 0 auto 20px;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .play-btn:hover {
+      transform: scale(1.08);
+      background: var(--gold);
+      color: white;
+    }
+
+    .request-box {
+      border: 2px solid var(--gold);
+      border-radius: 20px;
+      padding: 22px;
+      background: rgba(255,250,242,.8);
+      color: var(--maroon);
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .footer {
+      background: var(--maroon);
+      color: white;
+      padding: 35px 0;
+      text-align: center;
+    }
+
+    .floating-leaf {
+      position: absolute;
+      color: rgba(111,29,27,.12);
+      font-size: 48px;
+      animation: float 5s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    .leaf-1 { top: 130px; left: 8%; }
+    .leaf-2 { bottom: 180px; right: 8%; animation-delay: 1.5s; }
+    .leaf-3 { top: 55%; left: 4%; animation-delay: 2.5s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-18px) rotate(8deg); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: .8s;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media(max-width: 768px) {
+      .page-border {
+        margin: 7px;
+      }
+
+      .glass-card {
+        padding: 24px 18px;
+      }
+
+      .hero {
+        padding-top: 90px;
+      }
+
+      .names {
+        font-size: 82px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page-border">
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Azhar & Nabiihah</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#invitation">Invitation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#countdown">Countdown</a></li>
+          <li class="nav-item"><a class="nav-link" href="#video">Invitation Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rsvp">RSVP</a></li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </nav>
+
+  <span class="floating-leaf leaf-1">❦</span>
+  <span class="floating-leaf leaf-2">❦</span>
+  <span class="floating-leaf leaf-3">❦</span>
+
+  <header class="hero" id="invitation">
+    <div class="container text-center">
+      <div class="glass-card mx-auto reveal" style="max-width: 950px;">
+
+        <div class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+
+        <p class="small-title">In the name of Allah, the Most Beneficent, the Most Merciful</p>
+
+        <div class="gold-line"></div>
+
+        <h2 class="families">The Neeamuth and Ozeer Families</h2>
+
+        <p class="fs-5 mt-3">
+          have the immense pleasure to invite you to the wedding ceremony of their beloved son and grandson
+        </p>
+
+        <p class="small-title mt-4">Muhammad</p>
+
+        <div class="names">Azhar</div>
+
+        <div class="amp">&</div>
+
+        <div class="names">Nabiihah</div>
+
+        <div class="gold-line"></div>
+
+        <p class="fs-5">
+          May Allah bless this couple with love, happiness and barakah.
+        </p>
+
+        <h3 class="mt-3" style="font-family: Great Vibes, cursive; color: var(--maroon); font-size: 48px;">
+          Ameen
+        </h3>
+
+        <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#events" class="btn btn-maroon">View Details</a>
+          <a href="#rsvp" class="btn btn-gold">RSVP / Contact</a>
+        </div>
+
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="section">
-      <p class="eyebrow center">Our Main Packages</p>
-      <h2 class="section-title">Construction Work For Every Stage</h2>
-      <div class="cards three">
-        <article class="card">
-          <h3>Grey Finish</h3>
-          <p>Foundation, walls, roofing, plastering, concrete work and structural construction for new homes.</p>
-        </article>
-        <article class="card featured">
-          <h3>Full House Finish</h3>
-          <p>Complete ready-to-live finishing including tiles, paint, doors, windows, ceiling and final details.</p>
-        </article>
-        <article class="card">
-          <h3>Small House Works</h3>
-          <p>Fast 1 to 5 day jobs for incomplete houses, repairs, extensions and small construction needs.</p>
-        </article>
+  <section class="section" id="events">
+    <div class="container">
+      <div class="text-center reveal">
+        <h2 class="section-title">Event Details</h2>
+        <p class="lead">We would be honoured by your presence.</p>
       </div>
-    </section>
 
-    <section class="split-section">
-      <div>
-        <p class="eyebrow">Why Choose Us</p>
-        <h2>A trusted construction team led by Azhar & Ahmad</h2>
-        <p>We believe every home deserves strong work, clean finishing and honest service. Whether the job is big or small, we treat it seriously.</p>
-        <a class="btn primary" href="about.html">Learn About Us</a>
-      </div>
-      <div class="check-list">
-        <p>✅ Grey finish and full house finish</p>
-        <p>✅ Renovation and repairs</p>
-        <p>✅ Small incomplete house works</p>
-        <p>✅ Reliable team and fair pricing</p>
-        <p>✅ Construction work across Mauritius</p>
-      </div>
-    </section>
+      <div class="row g-4 mt-4">
 
-    <section class="cta">
-      <h2>Ready To Start Your Project?</h2>
-      <p>Contact A&A Construction for a quote on your house construction, renovation or finishing work.</p>
-      <a class="btn dark" href="contact.html">Contact Us Today</a>
-    </section>
-  </main>
+        <div class="col-lg-6 reveal">
+          <div class="event-card">
+            <div class="icon-circle"><i class="bi bi-moon-stars"></i></div>
+            <h3>Nikah Ceremony</h3>
+            <p class="date-big">Friday, 11th September 2026</p>
+            <p>After Salaat Esha at 20:30 hrs</p>
+            <p>
+              <strong>Quadri Sunnee Masjid</strong><br>
+              Morc. Goolamally, Le Hochet, Terre-Rouge
+            </p>
+            <a class="btn btn-maroon mt-2" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Quadri+Sunnee+Masjid+Le+Hochet+Terre+Rouge">
+              <i class="bi bi-geo-alt"></i> Open Map
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <div class="event-card">
+            <div class="icon-circle"><i class="bi bi-cup-hot"></i></div>
+            <h3>Dinner Reception</h3>
+            <p class="date-big">Sunday, 13th September 2026</p>
+            <p>From 18:00 hrs onwards</p>
+            <p>
+              <strong>Sir Abdul Razack Moahamed Hall</strong><br>
+              Phoenix
+            </p>
+            <a class="btn btn-maroon mt-2" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Sir+Abdul+Razack+Moahamed+Hall+Phoenix+Mauritius">
+              <i class="bi bi-geo-alt"></i> Open Map
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="request-box mt-5 reveal">
+        <div class="fs-5">Humble Request</div>
+        <div class="fs-3">No Gift Boxes Please</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="countdown" style="background: rgba(111,29,27,.05);">
+    <div class="container text-center">
+      <div class="reveal">
+        <h2 class="section-title">Countdown to Nikah</h2>
+        <p class="lead">Friday, 11th September 2026</p>
+      </div>
+
+      <div class="row g-3 justify-content-center mt-4 reveal">
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-number" id="days">00</div>
+            <div class="count-label">Days</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-number" id="hours">00</div>
+            <div class="count-label">Hours</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-number" id="minutes">00</div>
+            <div class="count-label">Minutes</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-number" id="seconds">00</div>
+            <div class="count-label">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="video">
+    <div class="container">
+      <div class="text-center reveal">
+        <h2 class="section-title">Invitation Video</h2>
+        <p class="lead">Add your save-the-date or invitation video here.</p>
+      </div>
+
+      <div class="video-box mt-4 reveal">
+        <div class="video-placeholder" id="videoPlaceholder">
+          <div>
+            <div class="play-btn" id="playVideo">
+              <i class="bi bi-play-fill"></i>
+            </div>
+            <h3>Watch Invitation Video</h3>
+            <p class="mb-0">Click play after you replace the YouTube link in the code.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center mt-3 text-muted">
+        Replace the video link in the JavaScript with your real YouTube embed link.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="rsvp" style="background: rgba(183,121,31,.08);">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <div class="col-lg-7 reveal">
+          <h2 class="section-title">With Best Compliments</h2>
+          <p class="lead">
+            From the Neeamuth & Ozeer Families.
+          </p>
+          <p>
+            Your presence and duas will be greatly appreciated.
+          </p>
+        </div>
+
+        <div class="col-lg-5 reveal">
+          <div class="event-card text-center">
+            <h3>RSVP / Contact</h3>
+            <p>Contact the family for confirmation or directions.</p>
+
+            <a class="btn btn-maroon w-100 mb-3" href="https://wa.me/230XXXXXXXX">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+
+            <a class="btn btn-gold w-100" href="tel:+230XXXXXXXX">
+              <i class="bi bi-telephone"></i> Call
+            </a>
+
+            <p class="small text-muted mt-3 mb-0">
+              Replace 230XXXXXXXX with your real number.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
-    <p>© 2026 A&A Construction • Mauritius</p>
+    <div class="container">
+      <p class="mb-1">Azhar & Nabiihah</p>
+      <p class="mb-0">May Allah bless this union with barakah. Ameen.</p>
+    </div>
   </footer>
+
+</div>
+
+<!-- jQuery Online -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Bootstrap JS Online -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Countdown
+  const weddingDate = new Date("September 11, 2026 20:30:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance < 0) {
+      $("#days").text("00");
+      $("#hours").text("00");
+      $("#minutes").text("00");
+      $("#seconds").text("00");
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    $("#days").text(days);
+    $("#hours").text(String(hours).padStart(2, "0"));
+    $("#minutes").text(String(minutes).padStart(2, "0"));
+    $("#seconds").text(String(seconds).padStart(2, "0"));
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+
+  // Smooth close mobile menu after clicking
+  $(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
+  // Reveal animation
+  function revealOnScroll() {
+    $(".reveal").each(function () {
+      const elementTop = $(this).offset().top;
+      const windowBottom = $(window).scrollTop() + $(window).height();
+
+      if (windowBottom > elementTop + 80) {
+        $(this).addClass("show");
+      }
+    });
+  }
+
+  $(window).on("scroll", revealOnScroll);
+  $(document).ready(revealOnScroll);
+
+  // Invitation video
+  $("#playVideo").on("click", function () {
+    $("#videoPlaceholder").html(`
+      <div class="ratio ratio-16x9 w-100">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+          title="Invitation Video"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
+    `);
+  });
+</script>
+
 </body>
 </html>
