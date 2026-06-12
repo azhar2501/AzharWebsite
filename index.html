@@ -1,75 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mauritius Construction Services</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azhar & Ahmad Construction</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:30px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#f59e0b;
+    padding:12px 20px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+.hero-content{
+    text-align:center;
+    max-width:800px;
+    margin:150px auto;
+}
+
+.hero-content h1{
+    font-size:clamp(45px,8vw,80px);
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#f59e0b;
+    color:#111;
+    padding:16px 35px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+.featured{
+    border-top:6px solid #f59e0b;
+}
+
+.about{
+    background:#111827;
+    color:white;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.service-box{
+    background:#1f2937;
+    padding:20px;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+    background:#f59e0b;
+    padding:80px 20px;
+}
+
+.contact h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.whatsapp{
+    text-decoration:none;
+    background:#111827;
+    color:white;
+    padding:18px 35px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+    .hero-content{
+        margin-top:100px;
+    }
+}
+</style>
 </head>
+
 <body>
-  <header class="hero">
-    <nav>
-      <h2>🏗️ MRU Build</h2>
-      <a href="#contact">Contact</a>
-    </nav>
 
-    <div class="hero-text">
-      <p class="tag">Construction Services in Mauritius</p>
-      <h1>We Build, Finish & Repair Homes</h1>
-      <p>
-        From grey finish to full house finish, and small incomplete house works.
-        We take all construction work.
-      </p>
-      <a href="#services" class="btn">View Services</a>
-    </div>
-  </header>
+<header class="hero">
 
-  <section id="services" class="section">
-    <h2>Our 3 Service Tiers</h2>
+<nav>
+<div class="logo">🏗️ Azhar & Ahmad Construction</div>
+<a href="#contact">Contact Us</a>
+</nav>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Grey Finish</h3>
-        <p>Structure, walls, roofing, plastering and basic construction work.</p>
-        <span>Best for new house construction</span>
-      </div>
+<div class="hero-content">
+<h1>Building Your Dream Home In Mauritius</h1>
 
-      <div class="card highlight">
-        <h3>Full House Finish</h3>
-        <p>Complete finishing including tiles, paint, ceiling, doors, windows and more.</p>
-        <span>Ready-to-live finish</span>
-      </div>
+<p>
+Owned by Azhar and Ahmad, we provide professional construction services across Mauritius.
+Whether you need a Grey Finish house, a Full House Finish, or small construction work,
+our team is ready to help.
+</p>
 
-      <div class="card">
-        <h3>Small House Works</h3>
-        <p>For incomplete houses or small repairs taking around 1 to 5 days.</p>
-        <span>Fast and reliable</span>
-      </div>
-    </div>
-  </section>
+<a href="#tiers" class="btn">Our Services</a>
+</div>
 
-  <section class="section dark">
-    <h2>What We Do</h2>
-    <div class="work-list">
-      <p>✅ House construction</p>
-      <p>✅ Renovation</p>
-      <p>✅ Plastering</p>
-      <p>✅ Tiling</p>
-      <p>✅ Painting</p>
-      <p>✅ Roofing</p>
-      <p>✅ Concrete work</p>
-      <p>✅ Small incomplete house jobs</p>
-    </div>
-  </section>
+</header>
 
-  <section id="contact" class="contact">
-    <h2>Need Construction Work?</h2>
-    <p>Contact us for grey finish, full house finish or small house works.</p>
-    <a class="whatsapp" href="https://wa.me/230XXXXXXXX">WhatsApp Us</a>
-  </section>
+<section class="section" id="tiers">
 
-  <footer>
-    <p>© 2026 MRU Build. Construction services in Mauritius.</p>
-  </footer>
+<h2 class="section-title">Our Construction Packages</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏠 Grey Finish</h3>
+<p>
+Complete structural construction including foundation, walls,
+roofing, plastering and concrete work.
+Perfect for clients who want to finish interiors later.
+</p>
+</div>
+
+<div class="card featured">
+<h3>🔑 Full House Finish</h3>
+<p>
+A complete ready-to-live house including painting, tiling,
+doors, windows, ceilings and finishing touches.
+Move in with confidence.
+</p>
+</div>
+
+<div class="card">
+<h3>🛠 Small House Works</h3>
+<p>
+Need 1 to 5 days of work?
+We handle unfinished projects, repairs, renovations,
+extensions, concrete works and more.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section about">
+
+<h2 class="section-title">Why Choose Us?</h2>
+
+<div class="services">
+
+<div class="service-box">✅ House Construction</div>
+<div class="service-box">✅ Grey Finish Projects</div>
+<div class="service-box">✅ Full House Finish</div>
+<div class="service-box">✅ Renovations</div>
+<div class="service-box">✅ Tiling</div>
+<div class="service-box">✅ Painting</div>
+<div class="service-box">✅ Roofing</div>
+<div class="service-box">✅ Concrete Works</div>
+<div class="service-box">✅ Extensions</div>
+<div class="service-box">✅ Small Jobs (1–5 Days)</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">About Azhar & Ahmad</h2>
+
+<div class="card">
+
+<p>
+Azhar & Ahmad Construction is a Mauritian construction business dedicated
+to delivering quality work, fair prices and reliable service.
+</p>
+
+<br>
+
+<p>
+From complete house construction to small unfinished projects,
+we take pride in helping homeowners bring their vision to life.
+</p>
+
+<br>
+
+<p>
+No project is too small or too large. We take all construction work.
+</p>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Get A Free Quote</h2>
+
+<p>
+Contact Azhar & Ahmad Construction today for your next project.
+</p>
+
+<a class="whatsapp" href="https://wa.me/230XXXXXXXX">
+📱 WhatsApp Us
+</a>
+
+</section>
+
+<footer>
+<p>
+© 2026 Azhar & Ahmad Construction • Mauritius
+</p>
+</footer>
+
 </body>
 </html>
